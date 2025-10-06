@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ab=new Scanner(System.in);
+        int base=ab.nextInt();
+        int height=ab.nextInt();
+        int side1=ab.nextInt();
+        int side2=ab.nextInt();
+        int side3=ab.nextInt();
+        float area=0.5f*base*height;
+        float perimeter=side1+side2+side3;
+        System.out.printf("Area of Triangle is %.2f%n",area);
+        System.out.printf("Perimeter of Triangle is %.2f%n",perimeter);
+    }
+}
