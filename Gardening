@@ -1,0 +1,20 @@
+import java.util.*;
+public class Solution{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int rows = sc.nextInt();
+        int cols = sc.nextInt();
+        int treeNo = sc.nextInt();
+        sc.close();
+        if (rows <= 0 || cols <= 0 || treeNo <= 0) {
+            System.out.println("It is not a mango tree");
+            return;
+        }
+        int column = (treeNo - 1) / rows + 1;
+        if (column == 2 || column == cols - 1) {
+            System.out.println("It is a mango tree");
+        } else {
+            System.out.println("It is not a mango tree");
+        }
+    }
+}
