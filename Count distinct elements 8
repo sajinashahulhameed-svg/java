@@ -1,0 +1,23 @@
+import java.util.*;
+public class Solution{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        HashSet<Integer> distinct = new HashSet<>();
+        for (int num : arr) {
+            distinct.add(num);
+        }
+        int count = distinct.size();
+        if (count == 1) {
+            System.out.println("There are " + count + " distinct element in the array.");
+        } else {
+            System.out.println("There are " + count + " distinct elements in the array.");
+        }
+
+    }
+
+}
