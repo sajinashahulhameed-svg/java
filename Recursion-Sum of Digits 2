@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+    public static int sumOfDigits(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        return n % 10 + sumOfDigits(n / 10);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if (n < 0 || n >= 1000) {
+            System.out.println("Enter a Valid Input!!!!!!!");
+        } else {
+            int sum = sumOfDigits(n);
+            System.out.printf("Sum of Digit:%04d\n", sum);
+        }
+    }
+}
