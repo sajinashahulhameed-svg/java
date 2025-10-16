@@ -1,0 +1,18 @@
+import java.util.*;
+public class Solution{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a<0||a>9){
+            System.out.println("Invalid Input");
+        }
+        else if(a*a%10==a){
+            System.out.println("Automorphic Number");
+        }
+        else{
+            System.out.println("Not Automorphic Number");
+        }
+            
+    
+    }
+}
